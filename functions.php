@@ -10,8 +10,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-function vue_script()
+// Add global js file
+function wpb_adding_scripts()
 {
-	wp_enqueue_script('app.js', get_template_directory_uri() . '/wordpress-vue/app.js', array(), '1.0.0', true);
+	wp_enqueue_script('index', get_template_directory_uri() . '/assets/js/index.js', array(), '1.0.0', true);
 }
-add_action('wp_enqueue_scripts', 'vue_script');
+add_action('wp_enqueue_scripts', 'wpb_adding_scripts');
+
+
+

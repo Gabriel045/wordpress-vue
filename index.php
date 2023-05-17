@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The site's entry point.
  *
@@ -8,7 +9,7 @@
  * @package HelloElementor
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
@@ -16,7 +17,8 @@ get_header();
 
 ?>
 
-<div id="myApp"></div>
+<div id="app">
+</div>
 
 <?php
 
